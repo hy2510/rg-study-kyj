@@ -15,7 +15,7 @@ $quizHeaderHeight: 60px;
 // 퀴즈템플릿
 .quizTemplate {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   &::before {
     content: '';
@@ -49,6 +49,7 @@ $quizHeaderHeight: 60px;
   margin: 0 20px;
   position: relative;
   -webkit-tap-highlight-color: transparent;
+  padding-top: env(safe-area-inset-top);
   @media (prefers-color-scheme: dark) {
     color: #ffffff;
   }
@@ -150,6 +151,7 @@ $quizHeaderHeight: 60px;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-bottom: env(safe-area-inset-bottom);
   .container {
     width: 100%;
     min-height: 450px;
